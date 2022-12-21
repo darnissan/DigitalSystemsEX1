@@ -8,9 +8,31 @@ module mux4 (
     output logic z           // Output
 );
 
-// Put your code here
-// ------------------
+    logic a, b, c, d, e, f, g, h, i, j;
 
-// End of your code
+    assign a = sel[0];
+	assign b = sel[0];
+	assign c = sel[1];
+	assign d = d0;
+	assign e = d1;
+	assign f = d2;
+	assign g = d3;
+	assign j = z;
+	
+	mux2 mux_0 (
+		.z(h), 
+		.d0(d), 
+		.d1(e), 
+		.sel(a));
+    mux2 mux_1 (
+		.z(i), 
+		.d0(f), 
+		.d1(g), 
+		.sel(b));
+    mux2 mux_2 (
+		.z(j), 
+		.d0(h), 
+		.d1(i), 
+		.sel(c));
 
 endmodule
