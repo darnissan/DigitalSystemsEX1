@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dar18/OneDrive-Technion/Documents/DigitalLibreraies/sim1_files
+vmux2
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1671612466
+!i10b 1
+!s100 SFG3c:BPmV0=5Z5jeBSl@3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IS`>BXFi]JFTdG8HooDR^Y3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1671612458
+8mux2.sv
+Fmux2.sv
+!i122 11
+Z5 L0 2 78
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1671612466.000000
+!s107 mux2.sv|
+!s90 -reportprogress|300|mux2.sv|
+!i113 1
+Z8 tCvgOpt 0
+vmux2_test
+R1
+!s110 1671612467
+!i10b 1
+!s100 n^H=Bc[LDFGkNA1[Tj1l32
+R3
+IR@mK[Z7J9Y[AU=?[a3A`o0
+R4
+S1
+R0
+w1671610002
+8mux2_autotest.sv
+Fmux2_autotest.sv
+!i122 12
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 mux2_autotest.sv|
+!s90 -reportprogress|300|mux2_autotest.sv|
+!i113 1
+R8
+vNAND2
+R1
+!s110 1671612465
+!i10b 1
+!s100 nV_[P_8gj[]?i<@HDENLl2
+R3
+IlXO459gEcm;]5]K[b9[821
+R4
+S1
+R0
+Z9 w1671608538
+8libcells/NAND2.sv
+Flibcells/NAND2.sv
+!i122 8
+Z10 L0 1 12
+R6
+r1
+!s85 0
+31
+!s108 1671612465.000000
+!s107 libcells/NAND2.sv|
+!s90 -reportprogress|300|libcells/NAND2.sv|
+!i113 1
+R8
+n@n@a@n@d2
+vOR2
+R1
+R2
+!i10b 1
+!s100 TKP6Xe513KabBIJNZ^OmL2
+R3
+I0iI5_iXMT4Q7i?KEf[N]O0
+R4
+S1
+R0
+R9
+8libcells/OR2.sv
+Flibcells/OR2.sv
+!i122 10
+R10
+R6
+r1
+!s85 0
+31
+R7
+!s107 libcells/OR2.sv|
+!s90 -reportprogress|300|libcells/OR2.sv|
+!i113 1
+R8
+n@o@r2
+vXNOR2
+R1
+R2
+!i10b 1
+!s100 gL:>B`z7><3OLI<>>SCg93
+R3
+IhoPC_jLXLRUdRzB6hF8L70
+R4
+S1
+R0
+R9
+8libcells/XNOR2.sv
+Flibcells/XNOR2.sv
+!i122 9
+R10
+R6
+r1
+!s85 0
+31
+R7
+!s107 libcells/XNOR2.sv|
+!s90 -reportprogress|300|libcells/XNOR2.sv|
+!i113 1
+R8
+n@x@n@o@r2
