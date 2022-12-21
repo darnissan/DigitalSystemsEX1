@@ -8,9 +8,21 @@ module mux4 (
     output logic z           // Output
 );
 
-// Put your code here
-// ------------------
-
-// End of your code
+    logic mux0_out, mux1_out;
+    mux2 mux_0 (
+		.z(mux0_out), 
+		.d0(d0), 
+		.d1(d1), 
+		.sel(sel[0]));
+    mux2 mux_1 (
+		.z(mux1_out), 
+		.d0(d2), 
+		.d1(d3), 
+		.sel(sel[0]));
+    mux2 mux_2 (
+		.z(z), 
+		.d0(mux0_out), 
+		.d1(mux1_out), 
+		.sel(sel[1]));
 
 endmodule
