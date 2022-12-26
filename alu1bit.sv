@@ -10,7 +10,7 @@ module alu1bit (
 
 	logic w0, w1, w2, w3, w4, w5;
 	
-	or2#(
+	OR2#(
         .Tpdlh(7),
         .Tpdhl(7)
 		
@@ -20,7 +20,7 @@ module alu1bit (
         .b(b)
     );
 	
-	nand2#(
+	NAND2#(
         .Tpdlh(5),
         .Tpdhl(5)
 		
@@ -30,7 +30,7 @@ module alu1bit (
         .b(w4)
     );
 	
-	xnor2# (
+	XNOR2# (
 		.Tpdlh(9), 
 		.Tpdhl(9)
 		
@@ -40,7 +40,7 @@ module alu1bit (
 		.b(b)
 	);
 	
-	nand2# (
+	NAND2# (
 		.Tpdlh(5), 
 		.Tpdhl(5)
 		
@@ -50,7 +50,7 @@ module alu1bit (
 		.b(w5)
 	);
 	
-	nand2# (
+	NAND2# (
 		.Tpdlh(5), 
 		.Tpdhl(5)
 		
