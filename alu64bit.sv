@@ -8,10 +8,23 @@ module alu64bit (
     output logic cout        // Carry out
 );
 
-// Put your code here
-// ------------------
+	logic [64:0] cout_cin;
+	
+	genvar i;
+	generate
+        for (i = 0; i < 64; i++)
+        begin
+          alu1bit alu1bit_inst(.a(a[i]), 
+							   .b(b[i]),
+							   .cin(cout_cin[i]), ---------------
+							   .op(op), 
+							   .s(s[i]), 
+							   .cout(cout_cin[i+1]) ---------------
+							   );
+        end
+    endgenerate
 
-
-// End of your code
+	assign cin = cout_cin[0];
+	assign cout = cout_cin[64];
 
 endmodule
