@@ -11,7 +11,7 @@ module mux2 (
 	logic g1,g2,g3,g4,g5;
 
     NAND2  #(
-        .Tpdlh(1),
+        .Tpdlh(5),
         .Tpdhl(5)
     ) nand2_inst1 (
         .Z(g1),
@@ -19,7 +19,7 @@ module mux2 (
         .B(sel)
     );
 	NAND2  #(
-        .Tpdlh(1),
+        .Tpdlh(5),
         .Tpdhl(5)
     )
 	  nand2_inst2 (
@@ -28,7 +28,7 @@ module mux2 (
         .B(g1)
     );
 	NAND2  #(
-        .Tpdlh(1),
+        .Tpdlh(5),
         .Tpdhl(5)
     )
 	  nand2_inst3 (
@@ -37,7 +37,7 @@ module mux2 (
         .B(d1)
     ); 
 	NAND2  #(
-        .Tpdlh(1),
+        .Tpdlh(5),
         .Tpdhl(5)
     )
 	  nand2_inst4 (
@@ -46,7 +46,7 @@ module mux2 (
         .B(g2)
     );
 	NAND2  #(
-        .Tpdlh(1),
+        .Tpdlh(5),
         .Tpdhl(5)
     )
 	  nand2_inst5 (
@@ -57,7 +57,7 @@ module mux2 (
 	
 	
     OR2 #(
-        .Tpdlh(5),
+        .Tpdlh(7),
         .Tpdhl(7)
     ) or2_inst (
         .Z(z),
