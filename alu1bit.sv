@@ -15,9 +15,9 @@ module alu1bit (
         .Tpdhl(7)
 		
 		) or_nor (
-        .z(w4),
-        .a(a),
-        .b(b)
+        .Z(w4),
+        .A(a),
+        .B(b)
     );
 	
 	NAND2#(
@@ -25,9 +25,9 @@ module alu1bit (
         .Tpdhl(5)
 		
 		) nand_nor (
-        .z(w0),
-        .a(w4),
-        .b(w4)
+        .Z(w0),
+        .A(w4),
+        .B(w4)
     );
 	
 	XNOR2# (
@@ -35,9 +35,9 @@ module alu1bit (
 		.Tpdhl(9)
 		
 		)xnor_xor(
-		.z(w5), 
-		.a(a), 
-		.b(b)
+		.Z(w5), 
+		.A(a), 
+		.B(b)
 	);
 	
 	NAND2# (
@@ -45,9 +45,9 @@ module alu1bit (
 		.Tpdhl(5)
 		
 		) nand_xor(
-		.z(w1), 
-		.a(w5), 
-		.b(w5)
+		.Z(w1), 
+		.A(w5), 
+		.B(w5)
 	);
 	
 	NAND2# (
@@ -55,9 +55,9 @@ module alu1bit (
 		.Tpdhl(5)
 		
 		) nand_fas(
-		.z(w3), 
-		.a(op[0]), 
-		.b(op[0])
+		.Z(w3), 
+		.A(op[0]), 
+		.B(op[0])
 	);
 	
 	fas ALU_fas (
@@ -73,7 +73,7 @@ module alu1bit (
 		.d0(w0), 
 		.d1(w1), 
 		.d2(w2), 
-		.d3(w3), 
+		.d3(w2),
 		.sel(op), 
 		.z(s)
 	);
