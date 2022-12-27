@@ -32,7 +32,7 @@ module mux2 (
         .Tpdhl(5)
     )
 	  nand2_inst3 (
-        .Z(g3),
+        .Z(g4),
         .A(sel),
         .B(d1)
     ); 
@@ -41,7 +41,7 @@ module mux2 (
         .Tpdhl(5)
     )
 	  nand2_inst4 (
-        .Z(g4),
+        .Z(g3),
         .A(g2),
         .B(g2)
     );
@@ -51,8 +51,8 @@ module mux2 (
     )
 	  nand2_inst5 (
         .Z(g5),
-        .A(g3),
-        .B(g3)
+        .A(g4),
+        .B(g4)
     ); 
 	
 	
@@ -61,8 +61,8 @@ module mux2 (
         .Tpdhl(7)
     ) or2_inst (
         .Z(z),
-        .A(g4),
-        .B(g5)
+        .A(g5),
+        .B(g3)
     );	
 
 
