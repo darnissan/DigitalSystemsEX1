@@ -10,6 +10,7 @@ module alu64bit (
 
 	logic [64:0] cout_cin;
 	assign cout_cin[0]=cin;
+	
 	genvar i;
 	generate
         for (i = 0; i < 64; i++)
@@ -24,7 +25,6 @@ module alu64bit (
         end
     endgenerate
 
-	
 	assign cout = cout_cin[64];
 
 endmodule
